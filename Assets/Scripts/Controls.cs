@@ -9,28 +9,46 @@ public class Controls : MonoBehaviour
     [SerializeField] private Rigidbody2D rgbd;
     public float moveSpeed = 5f;
     Vector2 moveDirection = Vector2.zero;
-    public InputAction playerControls;
+    public PlayerInputActions playerControls;
+    private InputAction move;
+    private InputAction fire;
 
     [Header("Layers")]
     private bool isTouchingLayers;
 
+    private void Awake()
+    {
+        playerControls = new PlayerInputActions();
+    }
+
     private void OnEnable()
     {
-        playerControls.Enable();
+        move = playerControls.Player.Move;
+        move.Enable();
+
+        fire = playerControls.Player.Fire;
+        fire.Enable();
+        fire.performed += Fire;
     }
 
     private void OnDisable()
     {
-        playerControls.Disable();
+        move.Disable();
+        fire.Disable();
     }
 
     void Update()
     {
-        moveDirection = playerControls.ReadValue<Vector2>();
+        moveDirection = move.ReadValue<Vector2>();
     }
 
     private void FixedUpdate()
     {
         rgbd.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+    }
+
+    private void Fire(InputAction.CallbackContext context)
+    {
+        Debug.Log("We fired (test)");
     }
 }

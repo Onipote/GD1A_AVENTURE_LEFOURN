@@ -559,7 +559,6 @@ GameObject:
   - component: {fileID: 1343738643}
   - component: {fileID: 1343738647}
   - component: {fileID: 1343738648}
-  - component: {fileID: 1343738649}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -721,95 +720,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rgbd: {fileID: 1343738643}
   moveSpeed: 5
-  playerControls:
-    m_Name: Player Controls
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 7087ccbb-d537-4fad-8457-5923d8fb95fd
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: Up/Down/Left/Right  [KEYBOARD]
-      m_Id: 0eff17cd-4dc8-45c7-8cac-3815128667e3
-      m_Path: 2DVector
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Player Controls
-      m_Flags: 4
-    - m_Name: up
-      m_Id: c89c5aa9-ff66-4113-81ad-b22b783cb11b
-      m_Path: <Keyboard>/#(Z)
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Player Controls
-      m_Flags: 8
-    - m_Name: down
-      m_Id: 4aa8d1f9-e87d-4618-be1c-4e95c7140f45
-      m_Path: <Keyboard>/#(S)
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Player Controls
-      m_Flags: 8
-    - m_Name: left
-      m_Id: e731b4af-4f32-49c7-8a5f-47f5fa2bfdbd
-      m_Path: <Keyboard>/#(Q)
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Player Controls
-      m_Flags: 8
-    - m_Name: right
-      m_Id: d684a23f-6fd7-4356-905e-78e1cf388e7a
-      m_Path: <Keyboard>/#(D)
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Player Controls
-      m_Flags: 8
-    - m_Name: Up/Down/Left/Right [CONTROLLER]
-      m_Id: dd3a31b3-6d0c-4277-b248-e90c842afdae
-      m_Path: 2DVector
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Player Controls
-      m_Flags: 4
-    - m_Name: up
-      m_Id: 27f9c4c3-9dfd-4f50-b4e9-a4216ff9efec
-      m_Path: <Joystick>/stick/up
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Player Controls
-      m_Flags: 8
-    - m_Name: down
-      m_Id: 60d12235-1e9b-4d98-997d-fca05da1e844
-      m_Path: <Joystick>/stick/down
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Player Controls
-      m_Flags: 8
-    - m_Name: left
-      m_Id: fd6b65d9-255d-4f8a-855d-1bedd083177c
-      m_Path: <Joystick>/stick/left
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Player Controls
-      m_Flags: 8
-    - m_Name: right
-      m_Id: 962a5dfd-f2f5-4693-bc08-ce35e300a28b
-      m_Path: <Joystick>/stick/right
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Player Controls
-      m_Flags: 8
-    m_Flags: 0
 --- !u!114 &1343738648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -822,21 +732,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9555eefe28339344a625b00a59ae76c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1343738649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1343738642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65394515dbdbf1042a688ba7edcb4ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boxCharacter: {fileID: 1343738644}
-  boxPlastic: {fileID: 1935670268}
-  compteurPlastic: 0
 --- !u!1 &1935670267
 GameObject:
   m_ObjectHideFlags: 0
