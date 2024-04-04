@@ -12,6 +12,7 @@ public class Controls : MonoBehaviour
     public PlayerInputActions playerControls;
     private InputAction move;
     private InputAction fire;
+   
 
     [Header("Layers")]
     private bool isTouchingLayers;
@@ -49,6 +50,6 @@ public class Controls : MonoBehaviour
 
     private void Fire(InputAction.CallbackContext context)
     {
-        Debug.Log("We fired (test)");
+        
     }
 }
