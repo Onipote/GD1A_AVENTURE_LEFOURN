@@ -26,10 +26,10 @@ public class Collectable : MonoBehaviour
 
     private void Start()
     {
-        inventory = GameObject.FindGameObjectsWithTag("Player").GetComponent<Inventory>();
+        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
@@ -37,7 +37,10 @@ public class Collectable : MonoBehaviour
             {
                 if (inventory.isFull[i] == false)
                 {
+                    //Item peut être mis dans l'inventaire
                     inventory.isFull[i] = true;
+                    Instantiate(itemButton, inventory.slots[i].transform, false);
+                    Destroy(gameObject);
                     break;
                 }
             }

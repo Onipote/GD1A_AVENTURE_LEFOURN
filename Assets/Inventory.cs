@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    [SerializeField] private bool[] isFull;
-    [SerializeField] private GameObject[] slots;
+    public bool[] isFull;
+    public GameObject[] slots;
 }
