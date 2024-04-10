@@ -11,6 +11,7 @@ public class AI_Chase : MonoBehaviour
 
     private float distance;
 
+
     void Update()
     {
         distance = Vector2.Distance(transform.position, player.transform.position);

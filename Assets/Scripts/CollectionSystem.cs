@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Collectable : MonoBehaviour
 {
-    public List<string> inventory;
+    /*public List<string> inventory;
     private void Start()
     {
         inventory = new List<string>();
@@ -19,6 +19,28 @@ public class Collectable : MonoBehaviour
             inventory.Add(itemType);
             print("Inventory length :" + inventory.Count);
             Destroy(collision.gameObject);
+        }
+    }*/
+
+    private Inventory inventory;
+
+    private void Start()
+    {
+        inventory = GameObject.FindGameObjectsWithTag("Player").GetComponent<Inventory>();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (other.CompareTag("Player"))
+        {
+            for (int i = 0; i < inventory.slots.Length; i++)
+            {
+                if (inventory.isFull[i] == false)
+                {
+                    inventory.isFull[i] = true;
+                    break;
+                }
+            }
         }
     }
 }
