@@ -76,15 +76,16 @@ public class FightSystem : MonoBehaviour
         //Si le joueur est rentré en contact la catégorie de villageois énervé
         if (player.IsTouchingLayers(angryVillagersMask) && !isTouched)
         {
-            //TakeDamage(Random.Range(10, 25));
+            TakeDamage(Random.Range(10, 25));
             Debug.Log("a pris des degats");
+            Debug.Log(health);
             isTouched = true;
             timerIsTouched = 2f;
         }
     }
 
-    /*public void TakeDamage(float damage)
+    public void TakeDamage(float damage)
     {
         health -= (int)damage;
-    }*/
+    }
 }

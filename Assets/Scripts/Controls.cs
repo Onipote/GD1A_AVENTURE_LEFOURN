@@ -10,9 +10,8 @@ public class Controls : MonoBehaviour
     public float moveSpeed = 5f;
     Vector2 moveDirection = Vector2.zero;
     public PlayerInputActions playerControls;
-    private InputAction move;
-    private InputAction fire;
-   
+    [SerializeField] private InputAction move;
+    [SerializeField] private InputAction fire;
 
     [Header("Layers")]
     private bool isTouchingLayers;
