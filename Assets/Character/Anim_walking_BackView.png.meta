@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 61bad8af80586c6458def05ea08ec15e
+guid: 2e99cbf8380fca24ca88dc2fd0a69fb8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 180
+  spritePixelsToUnits: 190
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,106 +97,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Anim_walking_sideview_0
+      name: Anim_walking_BackView_0
       rect:
         serializedVersion: 2
-        x: 99
-        y: 128
-        width: 184
-        height: 769
+        x: 319
+        y: 154
+        width: 262
+        height: 772
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 11, z: 0, w: 0}
+      border: {x: 0, y: 10, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: babb33ac19c8bf0439a0edefd95f063f
-      internalID: -900327508
+      spriteID: 85c07173a4d05054ebb758f8b50b2033
+      internalID: -605149697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_walking_sideview_1
+      name: Anim_walking_BackView_1
       rect:
         serializedVersion: 2
-        x: 414
-        y: 128
-        width: 214
-        height: 769
+        x: 830
+        y: 154
+        width: 262
+        height: 770
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 11, z: 0, w: 0}
+      border: {x: 0, y: 10, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e620bf087d9914b4badf828f7ed02317
-      internalID: -1499827255
+      spriteID: 3481ce8a7d3ffdb4bbc0d83b3bc8d6f9
+      internalID: 1314386044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Anim_walking_sideview_2
+      name: Anim_walking_BackView_2
       rect:
         serializedVersion: 2
-        x: 745
-        y: 128
-        width: 344
-        height: 768
+        x: 1340
+        y: 154
+        width: 262
+        height: 771
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 11, z: 0, w: 0}
+      border: {x: 0, y: 10, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05f1131a754d12244a31d2241389dd93
-      internalID: 787985922
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anim_walking_sideview_3
-      rect:
-        serializedVersion: 2
-        x: 1133
-        y: 128
-        width: 198
-        height: 769
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 11, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 997bb1dedf55d3c4dae2dcf68c07aa39
-      internalID: -1379855559
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anim_walking_sideview_4
-      rect:
-        serializedVersion: 2
-        x: 1441
-        y: 125
-        width: 340
-        height: 775
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 11, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72f66c536c65aed4ca5919727e4e4673
-      internalID: -1401929898
+      spriteID: 7f2d4fba9c82e4e479d4d8c64558f469
+      internalID: -132161987
       vertices: []
       indices: 
       edges: []
@@ -212,11 +170,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Anim_walking_sideview_0: -900327508
-      Anim_walking_sideview_1: -1499827255
-      Anim_walking_sideview_2: 787985922
-      Anim_walking_sideview_3: -1379855559
-      Anim_walking_sideview_4: -1401929898
+      Anim_walking_BackView_0: -605149697
+      Anim_walking_BackView_1: 1314386044
+      Anim_walking_BackView_2: -132161987
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
