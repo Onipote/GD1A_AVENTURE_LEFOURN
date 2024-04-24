@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6013151544861534864}
   - component: {fileID: 8547315547982412256}
   - component: {fileID: 5123286357850486549}
-  - component: {fileID: 6124958036683947675}
   - component: {fileID: 8983455159705885057}
+  - component: {fileID: 6124958036683947675}
   m_Layer: 5
   m_Name: Health Button
   m_TagString: Untagged
@@ -77,6 +77,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8983455159705885057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702006996394341332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21d79cdd4d10b8443bb84a6847c50e71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 1055115751465864066, guid: 4a1fbb52cb904fa4b96d633bf6c40167, type: 3}
 --- !u!114 &6124958036683947675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,16 +134,3 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &8983455159705885057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1702006996394341332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21d79cdd4d10b8443bb84a6847c50e71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 1055115751465864066, guid: 4a1fbb52cb904fa4b96d633bf6c40167, type: 3}
