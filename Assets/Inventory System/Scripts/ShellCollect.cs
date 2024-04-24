@@ -13,11 +13,5 @@ public class ShellCollect : MonoBehaviour
             Destroy(other.gameObject);
             sm.coinCount++;
         }
-
-        //Achat de la potion de régénération
-        if (other.gameObject.CompareTag("KindVillager"))
-        {
-            coinCount -= prixPotion;
-        }
     }
 }
