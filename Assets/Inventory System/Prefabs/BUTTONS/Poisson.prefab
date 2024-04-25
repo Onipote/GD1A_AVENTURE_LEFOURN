@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1445947304623423671
+--- !u!1 &7106809013740367742
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1303010152582747927}
-  - component: {fileID: 2281667302499213800}
-  - component: {fileID: 2233431400311805537}
-  - component: {fileID: 3660895459255624470}
-  - component: {fileID: 5449399007625972301}
+  - component: {fileID: 1586982403680637637}
+  - component: {fileID: 7333652611331375080}
+  - component: {fileID: 8243218744338896757}
+  - component: {fileID: 5857413277982275945}
+  - component: {fileID: 8371607098763743042}
   m_Layer: 0
-  m_Name: Coquillage
-  m_TagString: Coin
+  m_Name: Poisson
+  m_TagString: Collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1303010152582747927
+--- !u!4 &1586982403680637637
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1445947304623423671}
+  m_GameObject: {fileID: 7106809013740367742}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.32, y: -0.4675409, z: 0}
+  m_LocalPosition: {x: 5.2047634, y: -1.6638342, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2281667302499213800
+--- !u!212 &7333652611331375080
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1445947304623423671}
+  m_GameObject: {fileID: 7106809013740367742}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 487d6a45ac32e3542aa431fbf0842a1f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 70792e5e328b1764fac59e9769017689, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -87,13 +87,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &2233431400311805537
-CircleCollider2D:
+--- !u!70 &8243218744338896757
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1445947304623423671}
+  m_GameObject: {fileID: 7106809013740367742}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -120,28 +120,28 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.59
---- !u!114 &3660895459255624470
+  m_Size: {x: 0.775, y: 1.18}
+  m_Direction: 0
+--- !u!114 &5857413277982275945
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1445947304623423671}
+  m_GameObject: {fileID: 7106809013740367742}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 12929c359943fa84eb1facecbd4ae5a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 4700077174859336868, guid: 79ffa4c024bebe041ae222c8b4963f98, type: 3}
---- !u!114 &5449399007625972301
+  itemButton: {fileID: 5096062583364245473, guid: fd942ce67328bcd4f9123f00ced2ccde, type: 3}
+--- !u!114 &8371607098763743042
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1445947304623423671}
+  m_GameObject: {fileID: 7106809013740367742}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a9555eefe28339344a625b00a59ae76c, type: 3}
