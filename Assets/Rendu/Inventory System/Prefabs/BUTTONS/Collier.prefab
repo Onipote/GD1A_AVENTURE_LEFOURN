@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8205907146193518873}
   - component: {fileID: 3265790346615277034}
   - component: {fileID: 582916301665913819}
-  - component: {fileID: 621668576295801005}
   - component: {fileID: 9039149997184730465}
   m_Layer: 0
   m_Name: Collier
@@ -122,19 +121,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5925
---- !u!114 &621668576295801005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1721719096169523991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12929c359943fa84eb1facecbd4ae5a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemButton: {fileID: 4348672815516745219, guid: 28c894b81d0405b4a9bbb459d32e9139, type: 3}
 --- !u!114 &9039149997184730465
 MonoBehaviour:
   m_ObjectHideFlags: 0

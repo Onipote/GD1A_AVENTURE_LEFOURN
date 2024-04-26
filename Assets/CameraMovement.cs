@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
+    //"Lissage" et délimitation de l'emplacement de la caméra pour qu'elle n'affiche pas ce qu'il y a hors de la map
+
     public Transform target;
     public float smoothing;
     public Vector2 maxPosition;
     public Vector2 minPosition;
-
-    void Start()
-    {
-    
-    }
 
     void LateUpdate()
     {
