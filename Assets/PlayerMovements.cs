@@ -18,13 +18,13 @@ public class PlayerMovements : MonoBehaviour
         change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
-        Debug.Log(change);
 
         if (change != Vector3.zero)
         {
             MoveCharacter();
         }
 
+        //Déplacements basiques (droite, gauche, haut, bas)
         if (change.x > 0)
         {
             gameObject.GetComponent<Animator>().Play("Walking_SideView_R");
@@ -40,6 +40,27 @@ public class PlayerMovements : MonoBehaviour
         if (change.y < 0)
         {
             gameObject.GetComponent<Animator>().Play("Walking_FrontView");
+        }
+        
+        //Cibler avec le curseur
+        
+
+        //Attaque : coup de poing
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            gameObject.GetComponent<Animator>().Play("FistAttack_SideView_R");
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            gameObject.GetComponent<Animator>().Play("FistAttack_SideView_L");
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            gameObject.GetComponent<Animator>().Play("FistAttack_BackView");
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            gameObject.GetComponent<Animator>().Play("FistAttack_FrontView");
         }
     }
 
