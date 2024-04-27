@@ -11,7 +11,6 @@ public class ShellManager : MonoBehaviour
     void Update()
     {
         //Conversion du int en texte
-        string v = "Coquillage x" + coinCount.ToString();
-        coinText.text = v;
+        coinText.text = "Coquillage x" + coinCount.ToString();
     }
 }

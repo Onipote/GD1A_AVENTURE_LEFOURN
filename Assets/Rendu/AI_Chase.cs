@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AI_Chase : MonoBehaviour
 {
+    //Poursuite du joueur si celui-ci est entrée dans une zone ennemie
+
     public GameObject player;
     public float speed;
     public float speedAttack;
