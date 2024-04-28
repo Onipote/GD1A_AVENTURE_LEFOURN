@@ -6,7 +6,7 @@ public class FinishPoint : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            //Go to next zone
+            //Acces zone 002
             SceneController.instance.NextZone();
         }
     }
