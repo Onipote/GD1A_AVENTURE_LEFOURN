@@ -9,10 +9,13 @@ public class AI_Chase : MonoBehaviour
     public GameObject player;
     public float speed;
     public float speedAttack;
-    public float distanceBetween;
-
     private float distance;
+    private Animator anim;
 
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -25,13 +28,19 @@ public class AI_Chase : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
             transform.rotation = Quaternion.Euler(Vector3.forward * angle);
-        }
+            anim.Play("(AwakenMonster)");
 
-        if (distance < 3)
+        }
+        else if (distance < 3)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speedAttack * Time.deltaTime);
             transform.rotation = Quaternion.Euler(Vector3.forward * angle);
-            //Attaque
+            anim.Play("(AwakenMonster)");
+        }
+        else if (distance >= 5)
+        {
+            anim.Play("(AsleepMonster)");
         }
     }
+
 }

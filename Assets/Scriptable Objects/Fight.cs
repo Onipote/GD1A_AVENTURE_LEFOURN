@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class Fight : MonoBehaviour
 {
-    public GameObject player;
-
-    public int currentHealthPlayer;
-    public int maxHealthPlayer = 100;
+    public PlayerHealth playerHealth;
+    private int currentHealthPlayer;
     //private int shield = 50;
 
     //public int currentHealthMonster;
@@ -18,7 +16,7 @@ public class Fight : MonoBehaviour
 
     void Start()
     {
-        currentHealthPlayer = maxHealthPlayer;
+        currentHealthPlayer = (int)playerHealth.maxHealth;
         //currentHealthMonster = maxHealthMonster;
     }
 }

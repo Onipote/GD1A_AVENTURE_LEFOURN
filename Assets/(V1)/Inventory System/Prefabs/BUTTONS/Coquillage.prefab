@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3928748828361484486}
   - component: {fileID: 5957679475746403298}
   - component: {fileID: 2207044447740904945}
-  - component: {fileID: 7703187589141706257}
   - component: {fileID: 665787355904319753}
   m_Layer: 0
   m_Name: Coquillage
@@ -122,19 +121,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.39333335
---- !u!114 &7703187589141706257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474080130949183949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12929c359943fa84eb1facecbd4ae5a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemButton: {fileID: 2270933807815106236, guid: de67683593c40de40b2f6c4a12620b1f, type: 3}
 --- !u!114 &665787355904319753
 MonoBehaviour:
   m_ObjectHideFlags: 0

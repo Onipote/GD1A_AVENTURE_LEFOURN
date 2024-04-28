@@ -8,6 +8,8 @@ TagManager:
   - Coin
   - KindVillager
   - InaccessibleArea
+  - Monster
+  - Rock
   layers:
   - Default
   - TransparentFX

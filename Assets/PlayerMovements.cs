@@ -20,21 +20,20 @@ public class PlayerMovements : MonoBehaviour
     //Proprietes de combat
     private int damageFromPlayer;
     public KeyCode fist;
-    public KeyCode foot;
     public KeyCode anchor;
 
-    private bool isFacingRight;
-    private bool isFacingUp;
+    private int facedDirection;
 
     //"Animations" simples de combat
+    public GameObject rightHitbox;
+    public GameObject leftHitbox;
+    public GameObject upHitbox;
+    public GameObject downHitbox;
+
     public Sprite fistLeft;
     public Sprite fistRight;
     public Sprite fistFront;
     public Sprite fistBack;
-    public Sprite footLeft;
-    public Sprite footRight;
-    public Sprite footFront;
-    public Sprite footBack;
 
     void Start()
     {
@@ -49,11 +48,6 @@ public class PlayerMovements : MonoBehaviour
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
 
-        if (change != Vector3.zero)
-        {
-            MoveCharacter();
-        }
-
         anim.SetBool("goRight", change.x > 0);
         anim.SetBool("goLeft", change.x < 0);
         anim.SetBool("goBack", change.y > 0);
@@ -61,59 +55,46 @@ public class PlayerMovements : MonoBehaviour
 
         if (change.x > 0)
         {
-            isFacingRight = true;
+            facedDirection = 0;
         }
-        if (change.x < 0)
+        else if (change.x < 0)
         {
-            isFacingRight = false;
+            facedDirection = 1;
         }
-        if (change.y > 0)
+        else if (change.y > 0)
         {
-            isFacingUp = true;
+            facedDirection = 2;
         }
-        if (change.y < 0)
+        else if (change.y < 0)
         {
-            isFacingUp = false;
+            facedDirection = 3;
         }
 
         //Attaque : coup de poing
-        if (Input.GetKeyDown(fist) && (isFacingRight))
+        if (Input.GetKeyDown(fist))
         {
             Debug.Log("j'adore la prog");
-            fistAttack(0);
-        }
-        if (Input.GetKeyDown(fist) && (isFacingRight))
-        {
-            Debug.Log("j'adore la prog");
-            fistAttack(1);
-        }
-        if (Input.GetKeyDown(fist) && (isFacingRight))
-        {
-            Debug.Log("j'adore la prog");
-            fistAttack(2);
-        }
-        if (Input.GetKeyDown(fist) && (isFacingRight))
-        {
-            Debug.Log("j'adore la prog");
-            fistAttack(3);
+            fistAttack(facedDirection);
         }
 
-        //Attaque : coup de pied
-        if (Input.GetKeyDown(foot))
-        {
-            footAttack();
-        }
-
-        //Attaque : ancre-arbalète (power-up)
+        /*Attaque : ancre-arbalète (power-up)
         if (Input.GetKeyDown(anchor))
         {
             anchorAttack();
-        }
+        }*/
+
     }
 
+    private void FixedUpdate()
+    {
+        if (change != Vector3.zero)
+        {
+            MoveCharacter();
+        }
+    }
     void MoveCharacter()
     {
-        myRigidbody2D.MovePosition(transform.position + change * speed * Time.deltaTime);
+        myRigidbody2D.MovePosition(transform.position + change * speed * Time.fixedDeltaTime);
     }
 
     //Attaques possibles par le joueur
@@ -123,26 +104,26 @@ public class PlayerMovements : MonoBehaviour
         {
             case 0:
                 anim.SetTrigger("R_fistAttack");
+                rightHitbox.SetActive(true);
                 break;             
             case 1:                
                 anim.SetTrigger("L_fistAttack");
+                leftHitbox.SetActive(true);
                 break;             
             case 2:                
-                anim.SetTrigger("F_fistAttack");
+                anim.SetTrigger("B_fistAttack");
+                upHitbox.SetActive(true);
                 break;             
             case 3:                
-                anim.SetTrigger("B_fistAttack");
+                anim.SetTrigger("F_fistAttack");
+                downHitbox.SetActive(true);
                 break;
         }
         damageFromPlayer = UnityEngine.Random.Range(5, 35);
         Debug.Log("Fist attack : " + damageFromPlayer);
     }
-    public void footAttack()
-    {
-        damageFromPlayer = UnityEngine.Random.Range(10, 50);
-        Debug.Log("Foot attack : " + damageFromPlayer);
-    }
-    public void anchorAttack()
+    
+    /*public void anchorAttack()
     {
         damageFromPlayer = UnityEngine.Random.Range(15, 75);
         Debug.Log("Anchor attack : " + damageFromPlayer);
@@ -166,5 +147,5 @@ public class PlayerMovements : MonoBehaviour
     private void Fire(InputAction.CallbackContext context)
     {
 
-    }
+    }*/
 }
